@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AboutUsS</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav class="navbar sticky">
+		
+  		<a class="navitem " href="index.html"><i class="fa fa-home"></i></a>
+  		<a  class="navitem awards" href="Awards.html">Awards</a>
+  		<a  class="navitem Nearby " href="Events.html">Events</a>
+  		<div class="navitem explore">
+    		<button class=" explorebtn ">Explore 
+      			<i class="fa fa-caret-down"></i>
+    		</button>
+    		<div class="explore-content">
+      			<a  href="lakes.html">Lakes</a>
+      			<a  href="heritage.html">Heritage</a>
+      			<a  href="hotel.html">Hotels</a>
+      			<a  href="buildings.html">Buldings</a>
+      			<a  href="Attractions.html">Attractions</a>
+    		</div>
+  		</div>
+  		<a  class="navitem active" href="aboutus.html">About Us</a>
+  		<input type="text" placeholder="SearchPlaces..">
+	</nav>
+ 	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img src="e1.jpg" style="width:100%; height: 500px; ">
+  <div class="text">Lake view</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="e2.jpg" style="width:100%; height: 500px;">
+  <div class="text">Heritage</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="e3.jpg" style="width:100%; height: 500px;">
+  <div class="text">Wind and waves</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="e4.jpg" style="width:100%; height: 500px;">
+  <div class="text">Lake</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img src="e5.jpg" style="width:100%; height: 500px;">
+  <div class="text">Heritage</div>
+</div>
+	<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img src="e6.jpeg" style="width:100%; height: 500px;">
+  <div class="text">Raja-Bhoj</div>
+</div>
+	<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img src="e7.jpg" style="width:100%; height: 500px;">
+  <div class="text">Taj-ul-masjid</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img src="e8.jpg" style="width:100%; height: 500px;">
+  <div class="text">Birla-temple</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <img src="9.jpg" style="width:100%; height: 500px;">
+  <div class="text">Mahu-Bhan Tekri</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img src="e10.jpg" style="width:100%; height: 500px;">
+  <div class="text">Upper-lake</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+	<div class="content-2">
+    <div class="content-text box ">
+    	<h1>About us</h1>
+    	      <p>There are some amazing facts about the ‘Heart of India’.
+	-Bhopal was initially named as “Bhojpal” after the name of ruler who had his reign as Bhopal for a long time. The term “bhoj” is named after the kind Parmara king Bhoj and the term “pal” means “dam” as this ruler built several dams surrounding the numerous lakes that are still present in the city.</p>
+    </div>
+    <div class="about">
+    	<div class="about-content">
+    	<img src="Dev-logo.png" width="100px" height="100px">
+    	<header>Akshay's</header>
+    </div>
+    </div>
+    <footer>!!SAPNO KA SEHER BHOPAL!!</footer>
+   
+</body>
+<script type="text/javascript">
+	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</html>
